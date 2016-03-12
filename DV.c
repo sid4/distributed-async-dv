@@ -693,16 +693,6 @@ void processUpdateMessage(char* msg, char *source_ip, int default_ttl,
 	printRoutingTable("\nUpdated routing table after bellman ford convergence:\n");
 
 	if (DEBUG_MODE) {
-		/*
-		 printf("\nUpdated routing table after bellman ford convergence:\n");
-		 int row;
-		 for (row = 0; row < number_of_nodes; row++) {
-		 printf("\t%s\t%s\t%d\t%d\n", routing_table[row]->destination,
-		 routing_table[row]->next_hop, routing_table[row]->cost,
-		 routing_table[row]->ttl);
-		 }
-		 */
-
 		printGraph("\nUpdated graph after bellman ford convergence:\n");
 	}
 }
